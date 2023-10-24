@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
+}
+
+.title {
+  @apply text-2xl text-center;
+}
+
+.formWrapper {
+  @apply w-1/3 px-10 py-10 mt-8 text-left bg-white shadow-lg rounded-md;
+}
