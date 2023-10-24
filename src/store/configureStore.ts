@@ -11,10 +11,12 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
+import personSlice from './person/personSlice';
 
 const reducers = combineReducers({
   user: userSlice,
   table: tableSlice,
+  person: personSlice,
 });
 
 const persistConfig = {

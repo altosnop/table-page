@@ -1,0 +1,23 @@
+.inputWrapper {
+  @apply relative mb-8;
+}
+
+.input {
+  @apply w-full px-5 py-2 mt-2 border rounded-md transition focus:outline-none focus:ring-1 focus:ring-blue-600;
+}
+
+.inputError {
+  @apply w-full px-5 py-2 mt-2 border rounded-md text-red-300 transition focus:outline-none focus:ring-1 focus:ring-red-400;
+}
+
+.label {
+  @apply block font-medium;
+}
+
+.labelError {
+  @apply block font-medium transition text-red-400;
+}
+
+.errorMsg {
+  @apply text-red-500 text-sm mt-1 absolute;
+}

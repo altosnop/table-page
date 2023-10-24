@@ -2,7 +2,7 @@ import { PayloadAction, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 interface Person {
-  id: number;
+  id?: number;
   name: string;
   email: string;
   birthday_date: string;
@@ -64,12 +64,9 @@ const tableSlice = createSlice({
         state.data = [...action.payload.results];
       }
     );
-    builder.addCase(
-      setTableData.rejected,
-      (state, action: PayloadAction<any>) => {
-        state.loading = false;
-      }
-    );
+    builder.addCase(setTableData.rejected, (state, _) => {
+      state.loading = false;
+    });
   },
 });
 
